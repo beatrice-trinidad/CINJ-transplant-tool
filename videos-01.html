@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#4188c9">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <title>Bone Marrow Transplant Support Tool | Your Survival Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
+  <script src="./assets/js/require.min.js"></script>
+
+  <script>
+    requirejs.config({
+      baseUrl: '.'
+    });
+  </script>
+  <!-- Dashboard Core -->
+  <link href="./assets/css/dashboard.css" rel="stylesheet" />
+  <script src="./assets/js/dashboard.js"></script>
+  <link href="./assets/css/custom.css" rel="stylesheet" />
+
+  <!-- Charts.js Plugin -->
+  <script src="./assets/js/chart.js/chart.js/src/chart.js"></script>
+  <!-- Google Maps Plugin -->
+  <link href="./assets/plugins/maps-google/plugin.css" rel="stylesheet" />
+  <script src="./assets/plugins/maps-google/plugin.js"></script>
+  <!-- Input Mask Plugin -->
+  <script src="./assets/plugins/input-mask/plugin.js"></script>
+  <!-- FontAwesome Plugin -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body class="">
+  <div class="page">
+    <div class="page-main">
+      <div class="header py-4">
+        <div class="container">
+          <div class="d-flex">
+            <a class="header-brand" href="./index.html">
+                <img src="./assets/images/brand/logo_web.png" class="header-brand-img" alt="tabler logo">
+              </a>
+            <div class="d-flex order-lg-2 ml-auto">
+              <div class="dropdown">
+                <a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
+                    <span class="avatar" style="background-image: url(./demo/faces/female/25.jpg)"></span>
+                    <span class="ml-2 d-none d-lg-block">
+                      <span class="text-default">Jane Smith</span>
+                    </span>
+                  </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                  <a class="dropdown-item" href="#">
+                      <i class="dropdown-icon fe fe-settings"></i> Settings
+                    </a>
+                  <a class="dropdown-item" href="#">
+                      <i class="dropdown-icon fe fe-help-circle"></i> Need help?
+                    </a>
+                  <a class="dropdown-item" href="#">
+                      <i class="dropdown-icon fe fe-log-out"></i> Sign out
+                    </a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
+                <span class="header-toggler-icon"></span>
+              </a>
+          </div>
+        </div>
+      </div>
+      <div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg order-lg-first">
+              <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./first100days.html" class="nav-link"><i class="fas fa-calendar-alt"></i> The First 100 Days</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./caregiver-prep.html" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Caregiver Preparation</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./survival-bar.html" class="nav-link"><i class="fas fa-calculator"></i> Your Survival Data</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="./videos-01.html" class="nav-link active"><i class="fab fa-youtube"></i> Experience Videos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-3 my-md-5">
+        <div class="container">
+          <h1 class="page-title">
+                Treatment Timeline
+            </h1>
+          <div class="row">
+            <div id="timeline-wrap">
+              <div id="timeline"></div>
+              <div class="point"></div>
+              <!-- This is the individual marker-->
+              <div class="marker mfirst timeline-icon one">
+                <div class="timeline-text">
+                  <h5>Pre-BMT</h5>
+                  <h6 class="text-muted">31 Videos</h6>
+                </div>
+              </div>
+              <!-- / marker -->
+
+              <!-- This is the individual marker-->
+              <div class="marker m2 timeline-icon two">
+                <div class="timeline-text">
+                  <h5>Day 0</h5>
+                  <h6 class="text-muted">17 Videos</h6>
+                </div>
+              </div>
+              <!-- / marker -->
+
+              <!-- This is the individual panel-->
+              <div class="timeline-panel">
+              </div>
+              <!-- / panel -->
+
+              <!-- This is the individual marker-->
+              <div class="marker m3 timeline-icon three">
+                <div class="timeline-text">
+                  <h5>Day 30</h5>
+                  <h6 class="text-muted">24 Videos</h6>
+                </div>
+              </div>
+              <!-- / marker -->
+
+
+              <!-- This is the individual marker-->
+              <div class="marker m4 timeline-icon four">
+                <div class="timeline-text">
+                  <h5>Day 100</h5>
+                  <h6 class="text-muted">81 Videos</h6>
+                </div>
+              </div>
+              <!-- / marker -->
+
+              <!-- This is the individual marker-->
+              <div class="marker m5 timeline-icon five">
+                <div class="timeline-text">
+                  <h5>6 Months</h5>
+                  <h6 class="text-muted">67 Videos</h6>
+                </div>
+              </div>
+              <!-- / marker -->
+
+              <!-- This is the individual marker-->
+              <div class="marker m6 timeline-icon six">
+                <div class="timeline-text">
+                  <h5>1 Year +</h5>
+                  <h6 class="text-muted">101 Videos</h6>
+                </div>
+              </div>
+              <!-- / marker -->
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Video Filters</h3>
+                </div>
+                <div class="card-body">
+                  <h4>Characteristics</h4>
+                  <h6>AGE</h6>
+                  <div class="d-flex justify-content-center">
+                    <span class="font-weight-bold indigo-text mr-2 mt-2">18</span>
+                    <form class="range-field w-75">
+                      <input type="range" class="form-control custom-range" step="5" min="0" max="50">
+                    </form>
+                    <span class="font-weight-bold indigo-text ml-2 mt-2">50+</span>
+                  </div>
+                  <h6 class="mt-3">ROLE</h6>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Patient
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Caregiver
+                    </label>
+                  </div>
+                  <h6 class="mt-3">GENDER</h6>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Female
+                    </label>
+                  </div>
+                  <h4 class="mt-4">Common Complications</h4>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Early (1-3 months)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Middle (3-12 months)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Late (12 months+)
+                    </label>
+                  </div>
+                  <h4 class="mt-4">Psychosocial Complications</h4>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Back to Work
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Cognitive Deficits
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Fertility
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Financial Stress
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Psychosocial Effects
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Sexuality
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-9">
+              <div class="row d-flex justify-content-end">
+                <p>Sort by: <a href="#"><b>Newest to Oldest</b></a> | <a href="#">Oldest to Newest</a></p>
+              </div>
+              <div class="card-deck pb-3">
+                <div class="card mb-2">
+                  <a href="#"><img class="card-img-top img-fluid" src="./assets/images/videos/tom.png" alt=""></a>
+                  <div class="card-body p-4">
+                    <a href="#"><h5>Tom<small class="text-muted"> (Patient)</small></h5></a>
+                    <a href="#"><p class="card-text small">Tom describes a conversation he had with another patient when making his decision.</p></a>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <a href="#"><img class="card-img-top img-fluid" src="./assets/images/videos/helen.png" alt=""></a>
+                  <div class="card-body p-4">
+                    <a href="#"><h5>Helen<small class="text-muted"> (Caregiver)</small></h5></a>
+                    <a href="#"><p class="card-text small">Helen shares her experience of taking on more of her husband's responsibilities</p></a>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <a href="#"><img class="card-img-top img-fluid" src="./assets/images/videos/kimi.png" alt=""></a>
+                  <div class="card-body p-4">
+                    <a href="#"><h5>Kimi<small class="text-muted"> (Patient)</small></h5></a>
+                    <a href="#"><p class="card-text small">Kimi talks about having to ask her relatives to live with her during her recovery</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-deck pb-3">
+                <div class="card mb-2">
+                  <a href="#"><img class="card-img-top img-fluid" src="./assets/images/videos/john.png" alt=""></a>
+                  <div class="card-body p-4">
+                    <a href="#"><h5>John<small class="text-muted"> (Patient)</small></h5></a>
+                    <a href="#"><p class="card-text small">John has Chronic Graft Versus Host Disease that he takes steroids for.</p></a>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <a href="#"><img class="card-img-top img-fluid" src="./assets/images/videos/harold.png" alt=""></a>
+                  <div class="card-body p-4">
+                    <a href="#"><h5>Harold<small class="text-muted"> (Patient)</small></h5></a>
+                    <a href="#"><p class="card-text small">Harold was in remission for an extended period before having a relapse.</p></a>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <a href="#"><img class="card-img-top img-fluid" src="./assets/images/videos/samantha.png" alt=""></a>
+                  <div class="card-body p-4">
+                    <a href="#"><h5>Samantha<small class="text-muted"> (Caregiver)</small></h5></a>
+                    <a href="#"><p class="card-text small">Samantha cared for her brother's three children while he went through transplant.</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-deck pb-3">
+                <div class="card mb-2">
+                  <a href="#"><img class="card-img-top img-fluid" src="./assets/images/videos/adam.png" alt=""></a>
+                  <div class="card-body p-4">
+                    <a href="#"><h5>Adam<small class="text-muted"> (Patient)</small></h5></a>
+                    <a href="#"><p class="card-text small">Adam had a series of complications that prevented him from going home after 3 months.</p></a>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <a href="#"><img class="card-img-top img-fluid" src="./assets/images/videos/james.png" alt=""></a>
+                  <div class="card-body p-4">
+                    <a href="#"><h5>James<small class="text-muted"> (Patient)</small></h5></a>
+                    <a href="#"><p class="card-text small">James was able to go home at 100 days but was readmitted shortly after.</p></a>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <a href="#"><img class="card-img-top img-fluid" src="./assets/images/videos/Iris.png" alt=""></a>
+                  <div class="card-body p-4">
+                    <a href="#"><h5>Iris<small class="text-muted"> (Caregiver)</small></h5></a>
+                    <a href="#"><p class="card-text small">Iris's husband was readmitted shortly after he returned home for acute GVHD.</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav aria-label="video pagination">
+            <ul class="pagination justify-content-end">
+              <li class="page-item active">
+                <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
+            Copyright © 2018 Rutgers Cancer Institute of New Jersey and School of Communication and Information. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Timeline Plugin -->
+  <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

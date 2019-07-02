@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#4188c9">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <title>Bone Marrow Transplant Support Tool | Your Survival Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
+  <script src="./assets/js/require.min.js"></script>
+
+  <script>
+    requirejs.config({
+      baseUrl: '.'
+    });
+  </script>
+  <!-- Dashboard Core -->
+  <link href="./assets/css/dashboard.css" rel="stylesheet" />
+  <script src="./assets/js/dashboard.js"></script>
+  <link href="./assets/css/custom.css" rel="stylesheet" />
+
+  <!-- Charts.js Plugin -->
+  <script src="./assets/js/chart.js/chart.js/src/chart.js"></script>
+  <!-- Google Maps Plugin -->
+  <link href="./assets/plugins/maps-google/plugin.css" rel="stylesheet" />
+  <script src="./assets/plugins/maps-google/plugin.js"></script>
+  <!-- Input Mask Plugin -->
+  <script src="./assets/plugins/input-mask/plugin.js"></script>
+  <!-- FontAwesome Plugin -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body class="">
+  <div class="page">
+    <div class="page-main">
+      <div class="header py-4">
+        <div class="container">
+          <div class="d-flex">
+            <a class="header-brand" href="./index.html">
+                <img src="./assets/images/brand/logo_web.png" class="header-brand-img" alt="tabler logo">
+              </a>
+            <div class="d-flex order-lg-2 ml-auto">
+              <div class="dropdown">
+                <a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
+                    <span class="avatar" style="background-image: url(./demo/faces/female/25.jpg)"></span>
+                    <span class="ml-2 d-none d-lg-block">
+                      <span class="text-default">Jane Smith</span>
+                    </span>
+                  </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                  <a class="dropdown-item" href="#">
+                      <i class="dropdown-icon fe fe-settings"></i> Settings
+                    </a>
+                  <a class="dropdown-item" href="#">
+                      <i class="dropdown-icon fe fe-help-circle"></i> Need help?
+                    </a>
+                  <a class="dropdown-item" href="#">
+                      <i class="dropdown-icon fe fe-log-out"></i> Sign out
+                    </a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
+                <span class="header-toggler-icon"></span>
+              </a>
+          </div>
+        </div>
+      </div>
+      <div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg order-lg-first">
+              <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./first100days.html" class="nav-link"><i class="fas fa-calendar-alt"></i> The First 100 Days</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./caregiver-prep.html" class="nav-link active"><i class="fas fa-hand-holding-heart"></i> Caregiver Preparation</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./survival-bar.html" class="nav-link"><i class="fas fa-calculator"></i> Your Survival Data</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="./videos-01.html" class="nav-link"><i class="fab fa-youtube"></i> Experience Videos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-3 my-md-5">
+        <div class="container">
+          <div class="page-header mb-2">
+            <h1 class="page-title font-weight-bold d-inline">John, 70</h1>
+             <a href="#" class="d-inline"><h4 class=" ml-4 mb-0 px-4  align-self-end"><i class="far fa-star mr-2"></i>Save Video</h4></a>
+             <a href="#" class="d-inline"><h4 class=" ml-0 mb-0 px-0 align-self-end"><i class="far fa-paper-plane mr-2"></i>Send Video</h4></a>
+          </div>
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="card">
+                <a href="#"><img class="card-img-top img-fluid" src="./assets/images/videos/john.png" alt=""></a>
+                  <div class="card-body">
+                        <p>  John has chronic graft versus host disease (cGVHD) that he takes steroids for. He first ntoiced a rash appearing on his hands and arms before bringing it up to his doctor. Six months later, he is being tapered off of the steroids.</p>
+                        <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Show Transcript</a></p>
+                        <div class="collapse" id="collapseExample">
+                          <div class="card card-body bg-light">
+                            <p>With me, when I left hospital after my transplant I was actually given an information sheet with the symptoms to look for, and it was to do with you could have problems with your gut or your liver were the most common.</p>
+                            <p>I started off, I was actually away on holiday, I went to America on holiday not long after my transplant, possibly rather stupidly and I started with a very red, burning rash on my legs and my body, and it sort of spread to most of my body whilst I was away on holiday. But it wasin the last few days so I didn't worry about it. I just kept putting moisturising cream on and having baths with oily stuff that I'd actually taken with me because I did get a lot of dry skin following the transplant.</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="mb-4 pb-3">
+              <h3>Common Questions After Viewing This Video</h3>
+              <a href="#"><h5>> What is my risk for cGVHD?</h5></a>
+              <a href="#"><h5>> How is cGVHD treated?</h5></a>
+              <a href="#"><h5>> Does cGVHD ever go away?</h5></a>
+    </div>
+            <h3>Related Topics</h3>
+            <h5>cGVHD</h5>
+            <p>Chronic graft versus host disease (cGVHD) is a post-transplant complication commonly manifested on the skin or in the renal organs. It is a very common complication and can be treated with steroids or other medications.</p>
+             <a href="#"><i class="fas fa-info-circle mr-2"></i>Learn more about cGVHD</a>
+          </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-header bg-blue-lighter">
+                    <h4 class="mb-0">John's Profile</h4></div>
+                  <div class="card-body p-1">
+                    <table class="table table-responsive-sm mb-0">
+                      <tbody>
+                        <tr>
+                          <td class="border-top-0"><b>Age at Diagnosis:</b> 65 years old</td>
+                        </tr>
+                        <tr>
+                          <td><b>Age at Transplant:</b> 67 years old</td>
+                        </tr>
+                        <tr>
+                          <td><b>Date of Transplant:</b> 2015</td>
+                        </tr>
+                        <tr>
+                          <td><b>Diagnosis:</b> Acute Myeloid Leukemia (AML)</td>
+                        </tr>
+                        <tr>
+                          <td><b>Donor Type:</b> Related</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                  <h4>Related Videos<h4>
+                    <div class="card">
+                      <a href="#"><img class="card-img-top img-fluid" src="./assets/images/videos/helen.png" alt=""></a>
+                      <div class="card-body p-4">
+                        <a href="#"><h5>Helen<small class="text-muted"> (Caregiver)</small></h5></a>
+                        <a href="#"><p class="card-text small">Helen shares her experience of taking on more of her husband's responsibilities.</p></a>
+                      </div>
+                    </div>
+                    <div class="card mb-2">
+                      <a href="#"><img class="card-img-top img-fluid" src="./assets/images/videos/samantha.png" alt=""></a>
+                      <div class="card-body p-4">
+                        <a href="#"><h5>Samantha<small class="text-muted"> (Caregiver)</small></h5></a>
+                        <a href="#"><p class="card-text small">Samantha cared for her brother's three children while he went through transplant.</p></a>
+                      </div>
+                    </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
+            Copyright © 2018 Rutgers Cancer Institute of New Jersey and School of Communication and Information. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Timeline Plugin -->
+  <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
